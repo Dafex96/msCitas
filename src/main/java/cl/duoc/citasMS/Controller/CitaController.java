@@ -36,7 +36,7 @@ public class CitaController {
         }
     }
 
-    @GetMapping("/detalle/{id}")
+    @GetMapping("/dto/{id}")
     public ResponseEntity<CitaDetalleDTO> detalle(@PathVariable Integer id) {
         try {
             CitaDetalleDTO dto = service.obtenerDetalle(id);
